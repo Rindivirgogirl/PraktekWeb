@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <li>Home</li>
+            <li>UMKM</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li><img src= "img/logo.png"> </li>
+            <li>Blogs</li>
+        </ul>
+    </div>
+
+    <!-- <div class="slides">
+        <div class="slide">
+            <img src="img/slider1.png" alt=""/>
+        </div>
+        <div class="slide">
+            <img src="img/slider2.png" alt="">
+        </div>
+        <div class="navigation">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(-2)">&#10095;</a>
+        </div>
+    </div> -->
+
+
+<div class="page2">
+    <div class="page2Content">
+    <div class="page2Text">
+        <p class="text1page2">
+            Jual furniture Modern dan Sofa Minimalis untuk Rumah dan Kantor Anda
+        </p>
+        <p class="text2page2">
+            Inhouseidn.com merupakan perusahaaan yang bergerak dibidang interior 
+            dan pembuatan furniture custom dengan area marketing mencakup 
+            Jakarta, Bogor, Depok, Banten, Tangerang.
+        </p>
+        
+
+        <p class="text3page2">
+            Produk kami dikerjakan oleh seorang tenaga tukang profesional yang 
+            berpengalaman bertahun-tahun, dengan menggunakan bahan dan kayu pilihan,
+            sehingga menghasilkan karya produk yang baik dan berkualitas.
+        </p>
+</div>
+
+    <div class="page2Img">
+        <img src="img/page2.jpeg" alt="" />
+    </div>
+</div>
+
+
+
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex+= n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n >slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display= "none";
+            }
+            slides[slidesIndex - 1].style.display = "none";
+        }
+    </script>
+</body>
+</html>
